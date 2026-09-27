@@ -51,7 +51,7 @@ def generate_excel_bytes(english_qna, hindi_qna, marathi_qna):
     return data
 
 
-def save_excel_file(english_qna, hindi_qna, marathi_qna, file_path="Multilingual_QnA.xlsx"):
+def save_excel_file(english_qna, hindi_qna, marathi_qna, file_path="QnA.xlsx"):
     wb = create_excel_workbook(english_qna, hindi_qna, marathi_qna)
     wb.save(file_path)
 

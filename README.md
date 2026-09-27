@@ -10,7 +10,7 @@ A Python application that accepts documents in PDF, DOCX, or TXT format and gene
 2. Extract and clean the document text.
 3. Generate canonical Question-Answer pairs in English based only on document content.
 4. Translate the same QnA pairs into Hindi and Marathi, maintaining identical order and meaning.
-5. Save the output to `Multilingual_QnA.xlsx` with three sheets (`English`, `Hindi`, `Marathi`) and two columns (`Questions`, `Answers`).
+5. Save the output to `QnA.xlsx` with three sheets (`English`, `Hindi`, `Marathi`) and two columns (`Questions`, `Answers`).
 6. Provide a simple Streamlit interface for upload, question count selection, preview, and download.
 
 ---
@@ -43,7 +43,7 @@ project/
 ├── .env.example            # Example API key template
 ├── .gitignore              # Ignores sensitive and temporary files
 ├── sample_documents/       # Sample PDF, DOCX, and TXT files
-└── Multilingual_QnA.xlsx   # Output Excel file
+└── QnA.xlsx                # Output Excel file
 ```
 
 ---
@@ -64,11 +64,11 @@ project/
    ```
 4. Open `http://localhost:8501` in your browser.
 5. Upload a document, select the number of questions, and click **Generate QnA**.
-6. Preview the questions and click **Download Multilingual_QnA.xlsx**.
+6. Preview the questions and click **Download QnA.xlsx**.
 
 ---
 
-## 5. Output Format (Multilingual_QnA.xlsx)
+## 5. Output Format (QnA.xlsx)
 
 - **Sheet 1**: `English`
 - **Sheet 2**: `Hindi`

@@ -85,7 +85,7 @@ def main():
 
             status.info("Creating Excel file...")
             excel_bytes = generate_excel_bytes(english_qna, hindi_qna, marathi_qna)
-            save_excel_file(english_qna, hindi_qna, marathi_qna, "Multilingual_QnA.xlsx")
+            save_excel_file(english_qna, hindi_qna, marathi_qna, "QnA.xlsx")
 
             st.session_state.english_qna = english_qna
             st.session_state.hindi_qna = hindi_qna
@@ -131,9 +131,9 @@ def main():
             st.dataframe(df_mr, use_container_width=True)
 
         st.download_button(
-            label="Download Multilingual_QnA.xlsx",
+            label="Download QnA.xlsx",
             data=st.session_state.excel_bytes,
-            file_name="Multilingual_QnA.xlsx",
+            file_name="QnA.xlsx",
             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
             use_container_width=True,
         )
